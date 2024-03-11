@@ -5,6 +5,7 @@ import "./App.css";
 import emailIcon from "./assets/email.svg";
 import githubIcon from "./assets/github.svg";
 import linkedinIcon from "./assets/linkedin.svg";
+import profile from "./assets/pfp.jpg"
 
 function App() {
   return (
@@ -12,28 +13,29 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="header-content">
-          <h1>Nicolas Crumrine</h1>
+          <h1>Nicolas Crumrine</h1> 
+          <img src={profile} alt="Profile Picture" className="profile-picture" />
           <div className="social-links">
             <a
-              href="https://github.com/nicolas-crumrine"
+              href="https://github.com/CrumrineCoder"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={emailIcon} />
+              <img src={githubIcon} alt="" />
             </a>
             <a
-              href="https://www.linkedin.com/in/nicolas-crumrine"
+              href="https://www.linkedin.com/in/nicolas-crumrine-50899b120/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={emailIcon} />
-            </a>
+              <img src={linkedinIcon} alt="" />
+            </a>   
             <a
-              href="https://twitter.com/nicolas_crumrine"
+              href="mailto:crumrinecoding@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={emailIcon} />
+              <img src={emailIcon} alt="" />
             </a>
           </div>
         </div>
