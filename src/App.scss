@@ -1,3 +1,32 @@
-body{
+body {
   height: 100%;
+  background-color: red;
+  .App {
+    header {
+      background-color: #282c34;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1; 
+      
+      .left-elements {
+        display: flex;
+        align-items: center;
+      }
+
+      .right-elements {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+
+      font-size: calc(10px + 1vmin);
+      color: white;
+      padding: 10px;
+    }
+    img {
+      max-width: 50px;
+    }
+  }
 }
