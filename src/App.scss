@@ -8,17 +8,29 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      flex: 1; 
-      
+      flex: 1;
+
       .left-elements {
         display: flex;
         align-items: center;
+        * {
+          margin-right: 15px;
+        }
       }
 
       .right-elements {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
+        a {
+          img {
+            margin-left: 20px;
+            filter: brightness(0) invert(1);
+            &:hover {
+              filter: brightness(1);
+            }
+          }
+        }
       }
 
       font-size: calc(10px + 1vmin);
@@ -26,7 +38,9 @@ body {
       padding: 10px;
     }
     img {
-      max-width: 50px;
+      max-width: 45px;
+      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+      border-radius: 25px;
     }
   }
 }
