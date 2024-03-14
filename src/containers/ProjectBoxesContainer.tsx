@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import ProjectBox from "../components/ProjectBox.js";
+import ProjectBox from "../components/ProjectBox";
 
 import { Dispatch } from "react";
 
