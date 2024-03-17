@@ -18,6 +18,7 @@ interface ProjectBoxProps {
   };
   selected: any;
   onclick: any;
+  noProjectSelected: boolean;
 }
 
 class ProjectBox extends Component<ProjectBoxProps> {
@@ -33,7 +34,93 @@ class ProjectBox extends Component<ProjectBoxProps> {
         onMouseOver={() => this.props.onclick(this.props.key)}
         style={{ background: this.props.project.color }}
         key={this.props.key}
-      ></button>
+      >
+        <div
+          className="landingBoxInner"
+          style={{ backgroundImage: `url(${this.props.project.logo})` }}
+        >
+          <a
+            href={this.props.project.codeLink}
+            className={
+              this.props.project.caseStudyLink === undefined
+                ? "landingBoxExternalLink landingBoxExternalLink2"
+                : "landingBoxExternalLink landingBoxExternalLink3"
+            }
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <li
+              className={
+                this.props.noProjectSelected
+                  ? this.props.project.class + "Pill hiddenLink"
+                  : this.props.selected
+                  ? this.props.project.class + "Pill"
+                  : this.props.project.class + "Pill hiddenLink"
+              }
+              id="code-link"
+            >
+              <div>
+                <i className="fas fa-code fontIcon" />
+                See Code
+              </div>
+            </li>
+          </a>
+          <a
+            href={this.props.project.websiteLink}
+            className={
+              this.props.project.caseStudyLink === undefined
+                ? "landingBoxExternalLink landingBoxExternalLink2"
+                : "landingBoxExternalLink landingBoxExternalLink3"
+            }
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <li
+              className={
+                this.props.noProjectSelected
+                  ? this.props.project.class + "Pill hiddenLink"
+                  : this.props.selected
+                  ? this.props.project.class + "Pill"
+                  : this.props.project.class + "Pill hiddenLink"
+              }
+              id="website-link"
+            >
+              <div>
+                <i className="fas fa-external-link-alt fontIcon" />
+                Visit Website
+              </div>
+            </li>
+          </a>
+          {this.props.project.caseStudyLink !== undefined && (
+            <a
+              href={this.props.project.caseStudyLink}
+              className={
+                this.props.project.caseStudyLink === undefined
+                  ? "landingBoxExternalLink landingBoxExternalLink2"
+                  : "landingBoxExternalLink landingBoxExternalLink3"
+              }
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <li
+                className={
+                  this.props.noProjectSelected
+                    ? this.props.project.class + "Pill hiddenLink"
+                    : this.props.selected
+                    ? this.props.project.class + "Pill"
+                    : this.props.project.class + "Pill hiddenLink"
+                }
+                id="case-link"
+              >
+                <div>
+                  <i className="fas fa-book-open fontIcon" />
+                  Case Study
+                </div>
+              </li>
+            </a>
+          )}
+        </div>
+      </button>
     );
   }
 }

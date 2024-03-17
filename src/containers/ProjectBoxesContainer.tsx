@@ -21,12 +21,14 @@ interface ProjectBoxesContainerProps {
     video: string;
     class: string;
   }[];
+  noProjectSelected: boolean;
 }
 
 const ProjectBoxesContainer: React.FC<ProjectBoxesContainerProps> = ({
   selectedProject,
   setSelectedProject,
   projectData,
+  noProjectSelected,
 }) => {
     return (
         <div>
@@ -36,6 +38,7 @@ const ProjectBoxesContainer: React.FC<ProjectBoxesContainerProps> = ({
                     project={project}
                     selected={selectedProject === project}
                     onclick={() => setSelectedProject(project)}
+                    noProjectSelected={noProjectSelected}
                 />
             ))}
         </div>

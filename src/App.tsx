@@ -37,6 +37,7 @@ function App() {
           selectedProject={selectedProject}
           setSelectedProject={setSelectedProject}
           projectData={projectData}
+          noProjectSelected={selectedProject === null}
         />
       </div>
     </div>
