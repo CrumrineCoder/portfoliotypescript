@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import logo from "../assets/images/bardicLogo.png"
 interface ProjectBoxProps {
   key: any;
   project: {
@@ -37,7 +37,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
       >
         <div
           className="landingBoxInner"
-          style={{ backgroundImage: `url(${this.props.project.logo})` }}
+          style={{ backgroundImage: `url(${logo})` }}
         >
           <a
             href={this.props.project.codeLink}

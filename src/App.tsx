@@ -5,10 +5,10 @@ import Header from "./components/header";
 
 import NPC from "./assets/videos/NPC.mp4";
 import ProjectBoxesContainer from "./containers/ProjectBoxesContainer";
-
+import logo from "./assets/images/bardicLogo.png"
 const projectData = [
   {
-    logo: "../assets/images/bardicLogo.png",
+    logo: logo,
     color: "#E9C46A",
     projectName: "Bardic Inspiration",
     shortDesc: "MERN Music Tagging site",
