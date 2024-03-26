@@ -24,6 +24,7 @@ interface ProjectBoxProps {
 class ProjectBox extends Component<ProjectBoxProps> {
   constructor(props: ProjectBoxProps) {
     super(props);
+    console.log(props);
     this.state = {};
   }
 

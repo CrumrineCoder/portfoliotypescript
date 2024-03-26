@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/header";
 
 import NPC from "./assets/videos/NPC.mp4";
@@ -44,7 +44,11 @@ const projectData = [
 ];
 
 function App() {
-  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [selectedProject, setSelectedProject] = useState<any>(projectData[0]);
+
+  useEffect(() => {
+    console.log(selectedProject);
+  }, [selectedProject]);
 
   return (
     <div className="App">
