@@ -5,10 +5,11 @@ import Header from "./components/header";
 
 import NPC from "./assets/videos/NPC.mp4";
 import ProjectBoxesContainer from "./containers/ProjectBoxesContainer";
-import logo from "./assets/images/bardicLogo.png"
+import bardicLogo from "./assets/images/bardicLogo.png";
+import raptureLogo from "./assets/images/raptureLogo.png";
 const projectData = [
   {
-    logo: logo,
+    logo: bardicLogo,
     color: "#E9C46A",
     projectName: "Bardic Inspiration",
     shortDesc: "MERN Music Tagging site",
@@ -23,6 +24,23 @@ const projectData = [
     video: "../assets/videos/Bardic Inspiration2.mp4",
     class: "Bard",
   },
+  {
+    logo: raptureLogo,
+    color: "#218F7D",
+    projectName: "Rapture Fashion",
+    shortDesc: "React and Shopify Boutique Fashion site",
+    frontend:
+      "React.js, Redux.js, react-router, HTML5, CSS3, Bootstrap 4",
+    backend: "JavaScript, Shopify Storefront API, Firebase",
+    productPaper:
+      "This website was a study on UX research, UI design, marketing, and how to integrate Shopify with React all so I can build small business websites.",
+    codeLink: "https://github.com/CrumrineCoder/RaptureFashion/",
+    websiteLink: "https://rapture-fashion.firebaseapp.com/#/",
+    caseStudyLink:
+      "https://nicolascrumrine.com/#/posts/-LecEwsYvjJNcwIJJjao",
+    video: "Videos/raptureFashion.mp4",
+    class: "Rapture"
+  }
 ];
 
 function App() {
