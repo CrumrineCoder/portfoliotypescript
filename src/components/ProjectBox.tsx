@@ -37,7 +37,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
       >
         <div
           className="landingBoxInner"
-          style={{ backgroundImage: `url(${logo})` }}
+          style={{ backgroundImage: `url(${this.props.project.logo})` }}
         >
           <a
             href={this.props.project.codeLink}
