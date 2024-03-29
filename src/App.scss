@@ -56,7 +56,7 @@ body {
     }
 
     .landingBox {
-      color: black; 
+      color: black;
       background: white;
       max-width: 150px;
       max-height: 150px;
@@ -106,53 +106,50 @@ body {
   }
 }
 
-
-.landingBoxExternalLink{
+.landingBoxExternalLink {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: white; 
+  font-family: "Roboto", sans-serif;
+  color: white;
   text-decoration: none;
   list-style-type: none;
-  height: 76px; 
-
-
+  height: 76px;
 }
 
-.landingBoxExternalLink3 li{
+.landingBoxExternalLink3 li {
   height: 50px;
 }
 
-.landingBoxExternalLink2 li{
-  height: 76px; 
+.landingBoxExternalLink2 li {
+  height: 76px;
 }
 
-.landingBoxExternalLink li{
+.landingBoxExternalLink li {
   width: 150px;
   position: relative;
 
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
-.landingBoxExternalLink li:hover{
+.landingBoxExternalLink li:hover {
   background-position: left bottom;
 }
 
-.landingBoxExternalLink:nth-child(1) li{
+.landingBoxExternalLink:nth-child(1) li {
   border-radius: 15px 15px 0px 0px;
 }
 
-.landingBoxExternalLink2:nth-child(2) li{
+.landingBoxExternalLink2:nth-child(2) li {
   border-radius: 0px 0px 15px 15px;
 }
 
-.landingBoxExternalLink3:nth-child(3) li{
+.landingBoxExternalLink3:nth-child(3) li {
   border-radius: 0px 0px 15px 15px;
 }
 
-.landingBoxExternalLink li div{
-  position: absolute; 
+.landingBoxExternalLink li div {
+  position: absolute;
   margin: auto;
   position: absolute;
   left: 0;
@@ -161,14 +158,14 @@ body {
   bottom: 0;
 }
 
-.landingBoxExternalLink3 li div{
+.landingBoxExternalLink3 li div {
   top: 15px;
 }
 
 #projectLinks {
   padding: 0px;
   position: absolute;
- /* left: calc(50% - 418px);
+  /* left: calc(50% - 418px);
   */
   bottom: 0px;
   left: 50%;
@@ -183,77 +180,75 @@ body {
   margin: 5px 10px 0px 0px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
- /* background: #2D304C; */
- background: rgb(35, 35, 35); 
+  /* background: #2D304C; */
+  background: rgb(35, 35, 35);
   padding: 4px 10px;
   border: 3px solid transparent;
   border-radius: 10px;
-  border-color: white; 
+  border-color: white;
 }
 
-.fontIcon{
+.fontIcon {
   padding: 3px 5px 3px 5px;
   color: white;
-  -webkit-transition: color .5s;
-  -moz-transition: color .5s;
-  -ms-transition: color .5s;
-  -o-transition: color .5s;
-  transition: color .5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
-.externalLinks{
+.externalLinks {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: white; 
+  font-family: "Roboto", sans-serif;
+  color: white;
   text-decoration: none;
 }
 
-.landingBoxExternalLink{
+.landingBoxExternalLink {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: white; 
+  font-family: "Roboto", sans-serif;
+  color: white;
   text-decoration: none;
   list-style-type: none;
-  height: 76px; 
-
-
+  height: 76px;
 }
 
-.landingBoxExternalLink3 li{
+.landingBoxExternalLink3 li {
   height: 50px;
 }
 
-.landingBoxExternalLink2 li{
-  height: 76px; 
+.landingBoxExternalLink2 li {
+  height: 76px;
 }
 
-.landingBoxExternalLink li{
+.landingBoxExternalLink li {
   width: 150px;
   position: relative;
 
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
-.landingBoxExternalLink li:hover{
+.landingBoxExternalLink li:hover {
   background-position: left bottom;
 }
 
-.landingBoxExternalLink:nth-child(1) li{
+.landingBoxExternalLink:nth-child(1) li {
   border-radius: 15px 15px 0px 0px;
 }
 
-.landingBoxExternalLink2:nth-child(2) li{
+.landingBoxExternalLink2:nth-child(2) li {
   border-radius: 0px 0px 15px 15px;
 }
 
-.landingBoxExternalLink3:nth-child(3) li{
+.landingBoxExternalLink3:nth-child(3) li {
   border-radius: 0px 0px 15px 15px;
 }
 
-.landingBoxExternalLink li div{
-  position: absolute; 
+.landingBoxExternalLink li div {
+  position: absolute;
   margin: auto;
   position: absolute;
   left: 0;
@@ -262,28 +257,314 @@ body {
   bottom: 0;
 }
 
-.landingBoxExternalLink3 li div{
+.landingBoxExternalLink3 li div {
   top: 15px;
 }
 
-
-
-.Bard:hover{
-  background: #B69137 !important;
+.Bard:hover {
+  background: #b69137 !important;
 }
 
-.BardPill{
-  background: linear-gradient(to right, #9D781E 50%, #D0AB51 50%);
+.BardPill {
+  background: linear-gradient(to right, #9d781e 50%, #d0ab51 50%);
 }
 
-.BardDark, .BardBar::-webkit-scrollbar-thumb{
-  background-color: #B69137!important
+.BardDark,
+.BardBar::-webkit-scrollbar-thumb {
+  background-color: #b69137 !important;
 }
 
-.BardDarkOpacity{
-  background-color: rgba(182, 146, 55, 0.95)!important
+.BardDarkOpacity {
+  background-color: rgba(182, 146, 55, 0.95) !important;
 }
 
-.BardNavItem:hover{
-  color: #B69137 !important;
+.BardNavItem:hover {
+  color: #b69137 !important;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.defaultBar::-webkit-scrollbar-thumb {
+  background: black !important;
+}
+
+/* darken by 20% the base color https://www.cssfontstack.com/oldsites/hexcolortool/ */
+
+.Bard:hover {
+  background: #b69137 !important;
+}
+
+.BardPill {
+  background: linear-gradient(to right, #9d781e 50%, #d0ab51 50%);
+}
+
+.BardDark,
+.BardBar::-webkit-scrollbar-thumb {
+  background-color: #b69137 !important;
+}
+
+.BardDarkOpacity {
+  background-color: rgba(182, 146, 55, 0.95) !important;
+}
+
+.BardNavItem:hover {
+  color: #b69137 !important;
+}
+
+.Rapture:hover {
+  background: #005c4a !important;
+}
+
+.RapturePill {
+  background: linear-gradient(to right, #005c4a 50%, #218f7d 50%);
+}
+
+.RaptureDark,
+.RaptureBar::-webkit-scrollbar-thumb {
+  background-color: #005c4a !important;
+}
+
+.RaptureDarkOpacity {
+  background-color: rgba(0, 92, 74, 0.95) !important;
+}
+
+.RaptureNavItem:hover {
+  color: #005c4a !important;
+}
+
+.Poll:hover {
+  background: #730055 !important;
+}
+
+.PollPill {
+  background: linear-gradient(to right, #730055 50%, #a61c88 50%);
+}
+
+.PollDark,
+.PollBar::-webkit-scrollbar-thumb {
+  background-color: #730055 !important;
+}
+
+.PollDarkOpacity {
+  background-color: rgb(115, 0, 85, 0.95) !important;
+}
+
+.PollNavItem:hover {
+  color: #730055 !important;
+}
+
+.TMBG:hover {
+  background: #00050d !important;
+}
+
+.TMBGPill {
+  background: linear-gradient(to right, #00050d 50%, #171e26 50%);
+}
+
+.TMBGDark,
+.TMBGBar::-webkit-scrollbar-thumb {
+  background-color: #00050d !important;
+}
+
+.TMBGDarkOpacity {
+  background-color: rgb(0, 5, 13, 0.95) !important;
+}
+
+.TMBGNavItem:hover {
+  color: #00050d !important;
+}
+
+.Penny:hover {
+  background: #004559 !important;
+}
+
+.PennyPill {
+  background: linear-gradient(to right, #004559 50%, #18788c 50%);
+}
+
+.PennyDark,
+.PennyBar::-webkit-scrollbar-thumb {
+  background-color: #004559 !important;
+}
+
+.PennyDarkOpacity {
+  background-color: rgb(0, 69, 89, 0.95) !important;
+}
+
+.PennyNavItem:hover {
+  color: #004559 !important;
+}
+
+.Twitch:hover {
+  background: #310e71 !important;
+}
+
+.TwitchPill {
+  background: linear-gradient(to right, #310e71 50%, #6441a4 50%);
+}
+
+.TwitchDark,
+.TwitchBar::-webkit-scrollbar-thumb {
+  background-color: #310e71 !important;
+}
+
+.TwitchDarkOpacity {
+  background-color: rgb(49, 14, 113, 0.95) !important;
+}
+
+.TwitchNavItem:hover {
+  color: #310e71 !important;
+}
+
+.C4:hover {
+  background: #cc4c00 !important;
+}
+
+.C4Pill {
+  background: linear-gradient(to right, #cc4c00 50%, #ff7f11 50%);
+}
+
+.C4Dark,
+.C4Bar::-webkit-scrollbar-thumb {
+  background-color: #cc4c00 !important;
+}
+
+.C4DarkOpacity {
+  background-color: rgb(204, 76, 0, 0.95) !important;
+}
+
+.C4NavItem:hover {
+  color: #cc4c00 !important;
+}
+
+.Weather:hover {
+  background: #004d00 !important;
+}
+
+.WeatherPill {
+  background: linear-gradient(to right, #004d00 50%, #048027 50%);
+}
+
+.WeatherDark,
+.WeatherBar::-webkit-scrollbar-thumb {
+  background-color: #004d00 !important;
+}
+
+.WeatherDarkOpacity {
+  background-color: rgb(0, 77, 0, 0.95) !important;
+}
+
+.WeatherNavItem:hover {
+  color: #004d00 !important;
+}
+
+.Quote:hover {
+  background: #004d4d !important;
+}
+
+.QuotePill {
+  background: linear-gradient(to right, #004d4d 50%, #008080 50%);
+}
+
+.QuoteDark,
+.QuoteBar::-webkit-scrollbar-thumb {
+  background-color: #004d4d !important;
+}
+
+.QuoteDarkOpacity {
+  background-color: rgb(0, 77, 77, 0.95) !important;
+}
+
+.QuoteNavItem:hover {
+  color: #004d4d !important;
+}
+
+.NPC:hover {
+  background: #bc0000 !important;
+}
+
+.NPCPill {
+  background: linear-gradient(to right, #bc0000 50%, #ef281a 50%);
+}
+
+.NPCDark,
+.NPCBar::-webkit-scrollbar-thumb {
+  background-color: #bc0000 !important;
+}
+
+.NPCDarkOpacity {
+  background-color: rgb(188, 0, 0, 0.95) !important;
+}
+
+.NPCNavItem:hover {
+  color: #bc0000 !important;
+}
+
+.Wiki:hover {
+  background: #004983 !important;
+}
+
+.WikiPill {
+  background: linear-gradient(to right, #004983 50%, #007cb6 50%);
+}
+
+.WikiDark,
+.WikiBar::-webkit-scrollbar-thumb {
+  background-color: #004983 !important;
+}
+
+.WikiDarkOpacity {
+  background-color: rgb(0, 73, 131, 0.95) !important;
+}
+
+.WikiNavItem:hover {
+  color: #004983 !important;
+}
+
+.Calc:hover {
+  background: #532a7c !important;
+}
+
+.CalcPill {
+  background: linear-gradient(to right, #532a7c 50%, #865daf 50%);
+}
+
+.CalcDark,
+.CalcBar::-webkit-scrollbar-thumb {
+  background-color: #532a7c !important;
+}
+
+.CalcDarkOpacity {
+  background-color: rgb(83, 42, 124, 0.95) !important;
+}
+
+.CalcNavItem:hover {
+  color: #532a7c !important;
+}
+
+.Clock:hover {
+  background: #b60000 !important;
+}
+
+.ClockPill {
+  background: linear-gradient(to right, #b60000 50%, #e90000 50%);
+}
+
+.ClockDark,
+.ClockBar::-webkit-scrollbar-thumb {
+  background-color: #b60000 !important;
+}
+
+.ClockDarkOpacity {
+  background-color: rgb(182, 0, 0, 0.95) !important;
+}
+
+.ClockNavItem:hover {
+  color: #b60000 !important;
+}
+
+.hiddenLink {
+  opacity: 0;
 }
