@@ -44,7 +44,7 @@ const projectData = [
 ];
 
 function App() {
-  const [selectedProject, setSelectedProject] = useState<any>(projectData[0]);
+  const [selectedProject, setSelectedProject] = useState<any>(null);
 
   useEffect(() => {
     console.log(selectedProject);

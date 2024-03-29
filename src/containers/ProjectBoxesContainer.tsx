@@ -37,7 +37,7 @@ const ProjectBoxesContainer: React.FC<ProjectBoxesContainerProps> = ({
                     key={index}
                     project={project}
                     selected={selectedProject === project}
-                    onclick={() => setSelectedProject(project)}
+                    onclick={() => setSelectedProject(index)}
                     noProjectSelected={noProjectSelected}
                 />
             ))}
