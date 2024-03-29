@@ -34,8 +34,6 @@ class ProjectBox extends Component<ProjectBoxProps> {
 
     return (
       <>
-      <h1>{"work: " + this.props.selectedProject}</h1>
-
       <button
         className="landingBox"
         onMouseOver={() => this.props.onclick(this.props.key)}
