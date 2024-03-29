@@ -112,36 +112,38 @@ body {
             border-radius: 15px 15px 0px 0px;
           }
 
-          div{
+          div {
             position: absolute;
             margin: auto;
             position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
+            top: 30px;
           }
         }
       }
 
       .landingBoxExternalLink2 {
-        border-radius: 0px 0px 15px 15px;
+
+        &:nth-child(2) li {
+          border-radius: 0px 0px 15px 15px;
+        }
         li {
           height: 76px;
-          &:nth-child(2) li {
-            border-radius: 0px 0px 15px 15px;
-          }
+          
         }
       }
 
       .landingBoxExternalLink3 {
-        li{
-          height: 50px;
-          div{
-            top: 15px;
-          }
-        }
         &:nth-child(3) li {
           border-radius: 0px 0px 15px 15px;
+        }
+        li {
+          height: 50px;
+          div {
+            top: 15px;
+          }
         }
       }
     }
@@ -164,8 +166,6 @@ body {
     }
   }
 }
-
-
 
 #projectLinks {
   padding: 0px;
