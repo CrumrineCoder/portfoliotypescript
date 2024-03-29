@@ -30,13 +30,15 @@ const ProjectBoxesContainer: React.FC<ProjectBoxesContainerProps> = ({
   projectData,
   noProjectSelected,
 }) => {
+    console.log("Selected Project: " + selectedProject); 
+
     return (
         <div>
             {projectData.map((project, index) => (
                 <ProjectBox
                     key={index}
                     project={project}
-                    selected={selectedProject === project}
+                    selectedProject={selectedProject === index}
                     onclick={() => setSelectedProject(index)}
                     noProjectSelected={noProjectSelected}
                 />

@@ -16,7 +16,7 @@ interface ProjectBoxProps {
     video: string;
     class: string;
   };
-  selected: any;
+  selectedProject: boolean;
   onclick: any;
   noProjectSelected: boolean;
 }
@@ -54,7 +54,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
               className={
                 this.props.noProjectSelected
                   ? this.props.project.class + "Pill hiddenLink"
-                  : this.props.selected
+                  : this.props.selectedProject
                   ? this.props.project.class + "Pill"
                   : this.props.project.class + "Pill hiddenLink"
               }
@@ -80,7 +80,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
               className={
                 this.props.noProjectSelected
                   ? this.props.project.class + "Pill hiddenLink"
-                  : this.props.selected
+                  : this.props.selectedProject
                   ? this.props.project.class + "Pill"
                   : this.props.project.class + "Pill hiddenLink"
               }
@@ -107,7 +107,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
                 className={
                   this.props.noProjectSelected
                     ? this.props.project.class + "Pill hiddenLink"
-                    : this.props.selected
+                    : this.props.selectedProject
                     ? this.props.project.class + "Pill"
                     : this.props.project.class + "Pill hiddenLink"
                 }
