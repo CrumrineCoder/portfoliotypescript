@@ -29,13 +29,20 @@ class ProjectBox extends Component<ProjectBoxProps> {
   }
 
   render() {
+    const { selectedProject, noProjectSelected, project } = this.props;
+    const classPill = selectedProject ? project.class + "Pill" : project.class + "Pill hiddenLink";
+
     return (
+      <>
+      <h1>{"work: " + this.props.selectedProject}</h1>
+
       <button
         className="landingBox"
         onMouseOver={() => this.props.onclick(this.props.key)}
         style={{ background: this.props.project.color }}
         key={this.props.key}
       >
+        
         <div
           className="landingBoxInner"
           style={{ backgroundImage: `url(${this.props.project.logo})` }}
@@ -51,13 +58,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
             target="_blank"
           >
             <li
-              className={
-                this.props.noProjectSelected
-                  ? this.props.project.class + "Pill hiddenLink"
-                  : this.props.selectedProject
-                  ? this.props.project.class + "Pill"
-                  : this.props.project.class + "Pill hiddenLink"
-              }
+              className={noProjectSelected ? classPill + " hiddenLink" : classPill}
               id="code-link"
             >
               <div>
@@ -77,13 +78,7 @@ class ProjectBox extends Component<ProjectBoxProps> {
             target="_blank"
           >
             <li
-              className={
-                this.props.noProjectSelected
-                  ? this.props.project.class + "Pill hiddenLink"
-                  : this.props.selectedProject
-                  ? this.props.project.class + "Pill"
-                  : this.props.project.class + "Pill hiddenLink"
-              }
+              className={noProjectSelected ? classPill + " hiddenLink" : classPill}
               id="website-link"
             >
               <div>
@@ -103,18 +98,9 @@ class ProjectBox extends Component<ProjectBoxProps> {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <li
-                className={
-                  this.props.noProjectSelected
-                    ? this.props.project.class + "Pill hiddenLink"
-                    : this.props.selectedProject
-                    ? this.props.project.class + "Pill"
-                    : this.props.project.class + "Pill hiddenLink"
-                }
-                id="case-link"
-              >
+              <li className={noProjectSelected ? classPill + " hiddenLink" : classPill}>
                 <div>
-                  <i className="fas fa-book-open fontIcon" />
+                  <i className="fas fa-file-alt fontIcon" />
                   Case Study
                 </div>
               </li>
@@ -122,8 +108,8 @@ class ProjectBox extends Component<ProjectBoxProps> {
           )}
         </div>
       </button>
+      </>
     );
   }
 }
-
 export default ProjectBox;
