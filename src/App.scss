@@ -74,10 +74,8 @@ body {
 
     .landingBoxInner {
       background: white;
-      max-width: 150px;
-      max-height: 150px;
-      min-width: 100px;
-      min-height: 100px;
+      width: 150px;
+      height: 150px;
       padding: 0;
       border: none;
       position: relative;
@@ -94,7 +92,7 @@ body {
         list-style-type: none;
         height: 76px;
 
-        &:nth-child(1) li {
+        &:nth-child(1):not(.soloLink) li {
           border-radius: 15px 15px 0px 0px;
         }
 
@@ -141,6 +139,19 @@ body {
           height: 50px;
           div {
             top: 15px;
+          }
+        }
+      }
+      .soloLink {
+        height: 150px;
+        width: 150px;
+        display: block;
+        li {
+          height: 150px;
+          width: 150px;
+          border-radius: 15px;
+          div {
+            top: 55px;
           }
         }
       }

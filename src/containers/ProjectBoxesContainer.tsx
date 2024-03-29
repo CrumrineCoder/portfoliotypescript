@@ -16,7 +16,7 @@ interface ProjectBoxesContainerProps {
     backend: string;
     productPaper: string;
     codeLink: string;
-    websiteLink: string;
+    websiteLink?: string| undefined;
     caseStudyLink?: string| undefined;
     freeCodeCampLink?: string | undefined;
     video: string;
