@@ -17,7 +17,8 @@ interface ProjectBoxesContainerProps {
     productPaper: string;
     codeLink: string;
     websiteLink: string;
-    caseStudyLink: string;
+    caseStudyLink?: string| undefined;
+    freeCodeCampLink?: string | undefined;
     video: string;
     class: string;
   }[];
