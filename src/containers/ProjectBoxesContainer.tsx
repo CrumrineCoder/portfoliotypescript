@@ -34,7 +34,12 @@ const ProjectBoxesContainer: React.FC<ProjectBoxesContainerProps> = ({
     console.log("Selected Project: " + selectedProject); 
 
     return (
-        <div className="customScrollBar landingBoxesContainer">
+        <div className={
+          !noProjectSelected
+              ?projectData[selectedProject].class +
+              "Bar landingBoxesContainer customScrollBar"
+              : "landingBoxesContainer customScrollBar defaultBar"
+      }>
             {projectData.map((project, index) => (
                 <ProjectBox
                     key={index}
