@@ -16,12 +16,19 @@ body {
         box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
         border-radius: 25px;
       }
-      background-color: #282c34;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       flex: 1;
+
+      background-image: linear-gradient(#000, hsla(0, 0%, 100%, 0));
+      position: fixed;
+      z-index: 3;
+
+      font-family: Yantramanav, sans-serif;
+      font-weight: 500;
+      width: 100%;
 
       .left-elements {
         display: flex;
@@ -35,12 +42,14 @@ body {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
+        margin-top: 10px; 
+        margin-right: 30px; 
         a {
           img {
             margin-left: 20px;
             filter: brightness(0) invert(1);
             &:hover {
-              filter: brightness(1);
+              filter: invert(68%) sepia(61%) saturate(251%) hue-rotate(305deg) brightness(110%) contrast(105%);
             }
           }
         }
@@ -661,4 +670,52 @@ button:focus {
   font-size: 14px; 
   font-family: 'Yantramanav', sans-serif;
   color: white; 
+}
+
+
+#projectBackEnd, #projectFrontEnd, #overlayFrontEnd, #overlayBackEnd{
+  width: 100%;
+}
+#projectFrontEnd li, #projectBackEnd li, #overlayFrontEnd li, #overlayBackEnd li  {
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 3px 5px 3px 5px;
+  margin: 0px 3px 4px 3px;
+}
+#projectFrontEnd li, #overlayFrontEnd li {
+  background: #C54E30;
+  border: 1px solid white; 
+  padding: 5px; 
+}
+#projectBackEnd li, #overlayBackEnd li {
+  background: #9952B7;
+  border: 1px solid white; 
+  padding: 5px; 
+}
+#projectLinks {
+  padding: 0px;
+  position: absolute;
+ /* left: calc(50% - 418px);
+  */
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+}
+#projectLinks li {
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  margin: 5px 10px 0px 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+ /* background: #2D304C; */
+ background: rgb(35, 35, 35); 
+  padding: 4px 10px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  border-color: white; 
 }
