@@ -31,8 +31,6 @@ const ProjectBoxesContainer: React.FC<ProjectBoxesContainerProps> = ({
   projectData,
   noProjectSelected,
 }) => {
-    console.log("Selected Project: " + selectedProject); 
-
     return (
         <div className={
           !noProjectSelected

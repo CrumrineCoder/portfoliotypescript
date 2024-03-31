@@ -3,8 +3,8 @@ import "./App.scss";
 import React, { useState, useEffect } from "react";
 import Header from "./components/header";
 
-import NPC from "./assets/videos/NPC.mp4";
 import ProjectBoxesContainer from "./containers/ProjectBoxesContainer";
+
 import bardicLogo from "./assets/images/bardicLogo.png";
 import raptureLogo from "./assets/images/raptureLogo.png";
 import votingLogo from "./assets/images/votingAppLogo.png";
@@ -18,6 +18,23 @@ import quotesLogo from "./assets/images/quotesAppLogo.png";
 import wikipediaLogo from "./assets/images/wikipediaViewerLogo.png";
 import calculatorLogo from "./assets/images/calculatorAppLogo.png";
 import pomodoroLogo from "./assets/images/pomodoroAppLogo.png";
+
+import baseVideo from "./assets/videos/portfolioMetro.mp4";
+
+import bardicVideo from "./assets/videos/Bardic Inspiration2.mp4";
+import raptureVideo from "./assets/videos/raptureFashion.mp4";
+import pollingVideo from "./assets/videos/Polling.mp4";
+import cookiesVideo from "./assets/videos/PennyJanesCookies.mp4";
+import npcVideo from "./assets/videos/NPC.mp4";
+import twitchVideo from "./assets/videos/Twitch.mp4";
+import tmbgVideo from "./assets/videos/TMBG.mp4";
+import connectFourVideo from "./assets/videos/C4.mp4";
+import weatherVideo from "./assets/videos/Weather.mp4";
+import quotesVideo from "./assets/videos/Quote.mp4";
+import wikipediaVideo from "./assets/videos/wiki.mp4";
+import calculatorVideo from "./assets/videos/C4.mp4";
+import pomodoroVideo from "./assets/videos/Pomodoro.mp4";
+
 const projectData = [
   {
     logo: bardicLogo,
@@ -31,8 +48,8 @@ const projectData = [
       "This website was meant to be a simple implementation of a tool, but grew into a study on React Hooks and Sagas, AWS and web security, Redux, and more.",
     codeLink: "https://github.com/CrumrineCoder/Bard-Release",
     websiteLink: "https://confectionswithcharacter.com/",
- //   caseStudyLink: "https://nicolascrumrine.com/#/posts/-Lntx2aWkC23w704-4z-",
-    video: "../assets/videos/Bardic Inspiration2.mp4",
+    //   caseStudyLink: "https://nicolascrumrine.com/#/posts/-Lntx2aWkC23w704-4z-",
+    video: bardicVideo,
     class: "Bard",
   },
   {
@@ -46,8 +63,8 @@ const projectData = [
       "This website was a study on UX research, UI design, marketing, and how to integrate Shopify with React all so I can build small business websites.",
     codeLink: "https://github.com/CrumrineCoder/RaptureFashion/",
     websiteLink: "https://rapture-fashion.firebaseapp.com/#/",
- //   caseStudyLink: "https://nicolascrumrine.com/#/posts/-LecEwsYvjJNcwIJJjao",
-    video: "Videos/raptureFashion.mp4",
+    //   caseStudyLink: "https://nicolascrumrine.com/#/posts/-LecEwsYvjJNcwIJJjao",
+    video: raptureVideo,
     class: "Rapture",
   },
   {
@@ -63,10 +80,10 @@ const projectData = [
     productPaper:
       "Taught myself Redux and react-router with a backend. This version uses Firebase, Node version: https://github.com/CrumrineCoder/PollingReactNodeBase",
     codeLink: "https://github.com/CrumrineCoder/Polling",
-  //  websiteLink: "https://polling-269dc.firebaseapp.com/#/",
+    //  websiteLink: "https://polling-269dc.firebaseapp.com/#/",
     // prevWebsiteLink: "https://joinordie.glitch.me/",
-  //  caseStudyLink: "https://nicolascrumrine.com/#/posts/-L_33SYjMlSMzQigh4QA",
-    video: "Videos/Polling.mp4",
+    //  caseStudyLink: "https://nicolascrumrine.com/#/posts/-L_33SYjMlSMzQigh4QA",
+    video: pollingVideo,
     class: "Poll",
   },
   {
@@ -81,7 +98,7 @@ const projectData = [
       "Worked with another designer. Developed marketing strategy, wrote a competitive analysis, scheduled and wrote user stories with client.",
     codeLink: "https://github.com/CrumrineCoder/PennyJaneReact",
     websiteLink: "http://pennyjanescookies.com/",
-    video: "Videos\\PennyJanesCookies.mp4",
+    video: cookiesVideo,
     class: "Penny",
   },
   {
@@ -97,7 +114,7 @@ const projectData = [
       "I refined and expanded on Node.JS and Express.js and experimented with AngularJS alongside a database.",
     codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
     websiteLink: "https://npclookup.glitch.me/",
-    video: "Videos\\NPC.mp4",
+    video: npcVideo,
     class: "NPC",
   },
   {
@@ -115,7 +132,7 @@ const projectData = [
     websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
-    video: "Videos\\Twitch.mp4",
+    video: twitchVideo,
     class: "Twitch",
   },
   {
@@ -131,7 +148,7 @@ const projectData = [
       "The website allows users to anonymously comment on the newest album and to find the nearest tour. Also a practice in business marketing and design. Links and most buttons are placeholders.",
     codeLink: "https://github.com/CrumrineCoder/TheyMightBeGiantsv3",
     websiteLink: "https://tmbg.herokuapp.com/",
-    video: "Videos/TMBG.mp4",
+    video: tmbgVideo,
     class: "TMBG",
   },
   {
@@ -149,7 +166,7 @@ const projectData = [
     websiteLink: "https://crumrinecoder.github.io/connect4-version2/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game",
-    video: "Videos\\C4.mp4",
+    video: connectFourVideo,
     class: "C4",
   },
   {
@@ -166,7 +183,7 @@ const projectData = [
     websiteLink: "https://crumrinecoder.github.io/Weather-App/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
-    video: "Videos\\Weather.mp4",
+    video: weatherVideo,
     class: "Weather",
   },
   {
@@ -184,7 +201,7 @@ const projectData = [
     websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-random-quote-machine",
-    video: "Videos\\Quote.mp4",
+    video: quotesVideo,
     class: "Quote",
   },
   {
@@ -202,7 +219,7 @@ const projectData = [
     websiteLink: "http://dark-yarn.surge.sh/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer",
-    video: "Videos\\wiki.mp4",
+    video: wikipediaVideo,
     class: "Wiki",
   },
   {
@@ -219,7 +236,7 @@ const projectData = [
     websiteLink: " https://crumrinecoder.github.io/Calculator/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-javascript-calculator",
-    video: "Videos\\Calc.mp4",
+    video: calculatorVideo,
     class: "Calc",
   },
   {
@@ -237,7 +254,7 @@ const projectData = [
     websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock",
-    video: "Videos\\Pomodoro.mp4",
+    video: pomodoroVideo,
     class: "Clock",
   },
 ];
@@ -247,12 +264,25 @@ function App() {
 
   useEffect(() => {
     console.log(selectedProject);
+    console.log(projectData[selectedProject]?.video)
   }, [selectedProject]);
 
   return (
     <div className="App">
       <Header />
-      <video src={NPC} autoPlay loop muted />
+      <div className="landingVideoContainer">
+        <video
+          className="landingVideo"
+          autoPlay
+          muted={true}
+          loop
+          src={
+            (selectedProject === 0 || selectedProject === "Bard") ? projectData[0]?.video :
+            (selectedProject && projectData[selectedProject]?.video) ||
+            baseVideo
+          }
+        />
+      </div>
       <div className="landingBottomContainer">
         <ProjectBoxesContainer
           selectedProject={selectedProject}
