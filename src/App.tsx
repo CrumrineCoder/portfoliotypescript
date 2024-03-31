@@ -264,7 +264,6 @@ function App() {
 
   useEffect(() => {
     console.log(selectedProject);
-    console.log(projectData[selectedProject]?.video)
   }, [selectedProject]);
 
   return (
@@ -277,7 +276,7 @@ function App() {
           muted={true}
           loop
           src={
-            (selectedProject === 0 || selectedProject === "Bard") ? projectData[0]?.video :
+            (selectedProject === 0) ? projectData[0]?.video :
             (selectedProject && projectData[selectedProject]?.video) ||
             baseVideo
           }
