@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  background: white;
+  background: #ffffff;
   overflow-x: hidden;
   overflow-y: visible;
   margin: 0;
@@ -546,12 +546,10 @@ button:focus {
 .landingVideo{
   left: 50%;
   position: absolute;
- /* top: 50%;
-  transform: translate(-50%, -50%); */
   transform: translate(-50%, 0%);
   top: 0px; 
-  /*object-fit: fill;*/
   width: 100%;
+  overflow: hidden
 }
 
 .landingBottomContainer{
@@ -559,4 +557,108 @@ button:focus {
   left: 0; 
   bottom: 0;
   width: 100%;
+  overflow-x: scroll;
+  
+}
+
+
+.landingTitleBody{
+  background: rgba(17, 17, 17, 0.9);
+  color: white; 
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px; 
+  border-radius: 20px; 
+  -webkit-transition: -webkit-transform 2s linear; 
+  transition: transform 2s linear;
+  color: black;
+  background: white; 
+}
+
+.coloredTitleBody{
+  color: white; 
+}
+
+.landingTitle{
+  font-size: 60px; 
+  font-family: 'Geostar', cursive;
+  font-family: 'Staatliches', cursive;
+}
+
+.landingSubTitle{
+  font-size: 20px; 
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.landingBoxesContainer{
+  width: 100%;
+  overflow-x:scroll;
+  white-space: nowrap;
+  font-size: 0px;
+  padding-bottom: 20px;
+  background: white; 
+}
+
+.landingBox{
+  background: white;
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 0;
+  border: none;
+  position: relative;
+  font-size: 0px;
+  margin: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.285), 0px 10px 10px rgba(0, 0, 0, 0.394);
+  border-radius: 15px;
+}
+
+.landingBoxInner{
+  background: white;
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 0;
+  border: none;
+  position: relative;
+  font-size: 0px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.landingBoxImage{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.landingBoxText{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  width: 100%;
+  margin: 0px;
+}
+
+.landingAdditionalInfo{
+  padding: 5px;
+  border-radius: 15px;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+}
+
+.landingAdditionalInfoPills{
+  font-size: 14px; 
+  font-family: 'Yantramanav', sans-serif;
+  color: white; 
 }

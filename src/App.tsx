@@ -34,6 +34,7 @@ import quotesVideo from "./assets/videos/Quote.mp4";
 import wikipediaVideo from "./assets/videos/wiki.mp4";
 import calculatorVideo from "./assets/videos/C4.mp4";
 import pomodoroVideo from "./assets/videos/Pomodoro.mp4";
+import ProjectInfo from "./components/ProjectInfo";
 
 const projectData = [
   {
@@ -282,6 +283,11 @@ function App() {
           }
         />
       </div>
+      <ProjectInfo
+        selectedProject={selectedProject}
+        noProjectSelected={selectedProject === null}
+        projectData={projectData}
+      ></ProjectInfo>
       <div className="landingBottomContainer">
         <ProjectBoxesContainer
           selectedProject={selectedProject}
