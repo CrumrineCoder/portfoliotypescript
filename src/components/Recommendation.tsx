@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { throws } from "assert";
+import React from "react";
 
 interface RecommendationProps {
   text: string;
@@ -9,6 +8,7 @@ interface RecommendationProps {
   company: string;
   selectedProject: any;
   noProjectSelected: boolean;
+  colour: string; 
 }
 
 const Recommendation: React.FC<RecommendationProps> = ({
@@ -17,24 +17,12 @@ const Recommendation: React.FC<RecommendationProps> = ({
     name,
     role,
     company,
-    selectedProject,
-    noProjectSelected,
+    colour
 }) => {
-  var color = "";
-  if (selectedProject != null) {
-    color = color;
-  }
-  /*
-        </div>
-            <div style={{background: color}} className="recommendationContainer">
-            */
   return (
     <div
-      className={
-        !noProjectSelected
-          ? "Dark recommendationContainer"
-          : "recommendationContainer"
-      }
+      className="recommendationContainer"
+      style={{ background: colour }}
     >
       <i className="fas fa-quote-left recommendationQuoteIcon"></i>
       <div
@@ -42,7 +30,7 @@ const Recommendation: React.FC<RecommendationProps> = ({
         dangerouslySetInnerHTML={{ __html: text }}
       ></div>
       <div className="recommendationFooter">
-        <img className="recommendationFooterImage" src={image} />
+        <img alt="profile of the recommender" className="recommendationFooterImage" src={image} />
         <div className="recommendationFooterText">
           <p className="recommendatonFooterName">{name}</p>
           <p className="recommendationFooterCompany">
@@ -53,5 +41,6 @@ const Recommendation: React.FC<RecommendationProps> = ({
     </div>
   );
 };
+
 
 export default Recommendation;

@@ -288,6 +288,7 @@ function App() {
 
   useEffect(() => {
     console.log(selectedProject);
+    console.log(projectData[selectedProject]?.color);
   }, [selectedProject]);
 
   return (
@@ -321,19 +322,20 @@ function App() {
         />
       </div>
       <div className="recommendationSectionContainer">
-      {recommendations.map((recommendation, index) => (
-        <Recommendation
-          key={index}
-          name={recommendation.name}
-          text={recommendation.text}
-          company={recommendation.company}
-          role={recommendation.role}
-          image={recommendation.image}
-          selectedProject={selectedProject}
-          noProjectSelected={selectedProject === null}
-        />
-      ))}
-    </div>
+        {recommendations.map((recommendation, index) => (
+          <Recommendation
+            key={index}
+            name={recommendation.name}
+            text={recommendation.text}
+            company={recommendation.company}
+            role={recommendation.role}
+            image={recommendation.image}
+            selectedProject={selectedProject}
+            noProjectSelected={selectedProject === null}
+            colour={selectedProject === null ?  "" : projectData[selectedProject]?.color || ""}
+          />
+        ))}
+      </div>
     </div>
   );
 }
