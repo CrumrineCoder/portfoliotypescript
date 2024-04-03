@@ -8,6 +8,7 @@ body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   z-index: 0;
+
   .App {
     height: 100vh;
     header {
@@ -718,4 +719,59 @@ button:focus {
   border: 3px solid transparent;
   border-radius: 10px;
   border-color: white; 
+}
+
+
+.recommendationSectionContainer{
+  background: white; 
+  padding-bottom: 100px; 
+}
+
+.recommendationContainer{
+  margin: 30px; 
+  padding: 20px;
+  border: 2px solid white; 
+  border-radius: 15px; 
+  font-size: 18px;
+  color: white; 
+  background: black; 
+  font-family: 'Yantramanav', sans-serif;
+  /*font-style: italic; */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.285), 0px 10px 10px rgba(0, 0, 0, 0.394);
+}
+
+.recommendationQuoteIcon{
+  font-size: 30px;
+  display: block;
+  text-align: center; 
+}
+
+.recommendationFooter{
+  display: flex; 
+}
+
+.recommendationFooterImage{
+  width: 80px;
+  border-radius: 50px; 
+  object-fit: contain;
+  align-self: flex-start;
+  margin-right: 20px;
+  border: 2px solid white; 
+}
+
+.recommendationFooterText{
+  flex: 1 1 auto;
+  margin-top: 20px; 
+}
+
+.recommendatonFooterName{
+  font-weight: bold; 
+  font-style: normal; 
+  text-transform: uppercase; 
+  margin: 0px; 
+}
+
+.recommendationFooterCompany{
+ font-style: italic; 
+ margin: 0px;
 }
