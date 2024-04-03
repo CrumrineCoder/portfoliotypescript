@@ -17,12 +17,18 @@ const Recommendation: React.FC<RecommendationProps> = ({
     name,
     role,
     company,
+    noProjectSelected,
     colour
 }) => {
+  console.log("Colour:", colour);
+
   return (
     <div
-      className="recommendationContainer"
-      style={{ background: colour }}
+      className={
+        !noProjectSelected
+          ? colour + "Dark recommendationContainer"
+          : "recommendationContainer"
+      }
     >
       <i className="fas fa-quote-left recommendationQuoteIcon"></i>
       <div

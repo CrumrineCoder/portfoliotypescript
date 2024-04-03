@@ -288,7 +288,7 @@ function App() {
 
   useEffect(() => {
     console.log(selectedProject);
-    console.log(projectData[selectedProject]?.color);
+    console.log(projectData[selectedProject]?.class);
   }, [selectedProject]);
 
   return (
@@ -332,7 +332,7 @@ function App() {
             image={recommendation.image}
             selectedProject={selectedProject}
             noProjectSelected={selectedProject === null}
-            colour={selectedProject === null ?  "" : projectData[selectedProject]?.color || ""}
+            colour={projectData[selectedProject].class}
           />
         ))}
       </div>
