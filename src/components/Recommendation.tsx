@@ -3,14 +3,19 @@ import { throws } from "assert";
 
 interface RecommendationProps {
   selectedProject: any;
+  noProjectSelected: boolean;
   colour: string;
+  text: string;
+  image: string; 
+  name: string;
+  role: string; 
+  company: string; 
 }
 
 const Recommendation: React.FC<RecommendationProps> = ({
   selectedProject,
   noProjectSelected,
   colour,
-  class,
   text,
   image,
   name,
@@ -30,7 +35,7 @@ const Recommendation: React.FC<RecommendationProps> = ({
     <div
       className={
         !noProjectSelected
-          ? class + "Dark recommendationContainer"
+          ? "Dark recommendationContainer"
           : "recommendationContainer"
       }
     >
