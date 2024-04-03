@@ -2,26 +2,23 @@ import React, { Component } from "react";
 import { throws } from "assert";
 
 interface RecommendationProps {
+  text: string;
+  image: string;
+  name: string;
+  role: string;
+  company: string;
   selectedProject: any;
   noProjectSelected: boolean;
-  colour: string;
-  text: string;
-  image: string; 
-  name: string;
-  role: string; 
-  company: string; 
 }
 
 const Recommendation: React.FC<RecommendationProps> = ({
-  selectedProject,
-  noProjectSelected,
-  colour,
-  text,
-  image,
-  name,
-  role,
-  company,
-
+    text,
+    image,
+    name,
+    role,
+    company,
+    selectedProject,
+    noProjectSelected,
 }) => {
   var color = "";
   if (selectedProject != null) {

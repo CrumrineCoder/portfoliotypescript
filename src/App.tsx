@@ -36,6 +36,10 @@ import calculatorVideo from "./assets/videos/C4.mp4";
 import pomodoroVideo from "./assets/videos/Pomodoro.mp4";
 import ProjectInfo from "./components/ProjectInfo";
 
+import seanPFP from "./assets/images/Sean.jpg";
+import robertPFP from "./assets/images/Robert.jpg";
+import Recommendation from "./components/Recommendation";
+
 const projectData = [
   {
     logo: bardicLogo,
@@ -263,17 +267,19 @@ const projectData = [
 let recommendations = [
   {
     name: "Robert Tolmach",
-    recommendation:
+    text:
       "<p>Nic has been fantastic to work with while interning with our nonprofit, https://ChangingThePresent.org. I am glad to recommend him.</p><p>His knowledge, analytical skills, ability to teach himself new skills, creativity, work ethic, and productivity are all impressive. He is also enthusiastic, eager to learn, and likable. Everyone here—management, staff, and other interns—loved working with him.</p>",
     role: "Co-Founder",
+    company: "Changing The Present",
+    image: robertPFP,
   },
   {
     name: "Sean D. Mack",
-    recommendation:
+    text:
       "<p>Nicolas was an amazing addition to the intern program here at xOps.</p> <p>Nic developed front end interface based on mock-ups provided for our open source monitoring tools. He met with our worldwide team for daily standups and biweekly sprints to continue designing mockups after he finished building from the ones provided.</p> <p> During our chats, he was always thoughtful of the business, user, and the development team’s pain points, but was never paralyzed in his decision making. He has an eye for UI design along with an inclination to research and understand the user. He is able to discover pain points and begin developing solutions for them, and is always more than happy to communicate when he needs help. </p> <p> Nic is a talented designer and front-end programmer and I am happy to recommend him for any position he might apply. </p>",
-
     role: "CEO/CTO and Principal Consultant",
-    company: "xOps"
+    company: "xOps",
+    image: seanPFP
   },
 ];
 
@@ -315,24 +321,19 @@ function App() {
         />
       </div>
       <div className="recommendationSectionContainer">
+      {recommendations.map((recommendation, index) => (
         <Recommendation
-          company=
-          image="Images/Sean.jpg"
-          text={getRecommendation("Sean D. Mack")[0].recommendation}
-          selectedProjectIndex={this.state.selectedProjectIndex}
+          key={index}
+          name={recommendation.name}
+          text={recommendation.text}
+          company={recommendation.company}
+          role={recommendation.role}
+          image={recommendation.image}
+          selectedProject={selectedProject}
           noProjectSelected={selectedProject === null}
-          projects={projectData}
-        ></Recommendation>
-        <Recommendation
-          name="Robert Tolmach"
-          company="Changing the Present"
-          image="Images/Robert.jpg"
-          text={getRecommendation("Robert Tolmach")[0].recommendation}
-          selectedProjectIndex={this.state.selectedProjectIndex}
-          noProjectSelected={selectedProject === null}
-          projects={projectData}
-        ></Recommendation>
-      </div>
+        />
+      ))}
+    </div>
     </div>
   );
 }
