@@ -52,7 +52,7 @@ const projectData = [
     productPaper:
       "This website was meant to be a simple implementation of a tool, but grew into a study on React Hooks and Sagas, AWS and web security, Redux, and more.",
     codeLink: "https://github.com/CrumrineCoder/Bard-Release",
-    websiteLink: "https://confectionswithcharacter.com/",
+   // websiteLink: "https://confectionswithcharacter.com/",
     //   caseStudyLink: "https://nicolascrumrine.com/#/posts/-Lntx2aWkC23w704-4z-",
     video: bardicVideo,
     classToAdd: "Bard",
@@ -102,7 +102,7 @@ const projectData = [
     productPaper:
       "Worked with another designer. Developed marketing strategy, wrote a competitive analysis, scheduled and wrote user stories with client.",
     codeLink: "https://github.com/CrumrineCoder/PennyJaneReact",
-    websiteLink: "http://pennyjanescookies.com/",
+   // websiteLink: "http://pennyjanescookies.com/",
     video: cookiesVideo,
     classToAdd: "Penny",
   },
@@ -118,7 +118,7 @@ const projectData = [
     productPaper:
       "I refined and expanded on Node.JS and Express.js and experimented with AngularJS alongside a database.",
     codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
-    websiteLink: "https://npclookup.glitch.me/",
+   // websiteLink: "https://npclookup.glitch.me/",
     video: npcVideo,
     classToAdd: "NPC",
   },
@@ -134,7 +134,7 @@ const projectData = [
     productPaper:
       "I taught myself one-page Angular design with this project as well as using multiple APIs with Angular.",
     codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone",
-    websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
+   // websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
     video: twitchVideo,
@@ -152,7 +152,7 @@ const projectData = [
     productPaper:
       "The website allows users to anonymously comment on the newest album and to find the nearest tour. Also a practice in business marketing and design. Links and most buttons are placeholders.",
     codeLink: "https://github.com/CrumrineCoder/TheyMightBeGiantsv3",
-    websiteLink: "https://tmbg.herokuapp.com/",
+   // websiteLink: "https://tmbg.herokuapp.com/",
     video: tmbgVideo,
     classToAdd: "TMBG",
   },
@@ -185,7 +185,7 @@ const projectData = [
     productPaper:
       "I taught myself multiple APIs, Angular, Sass and Mobile-first design with this project.",
     codeLink: "https://github.com/CrumrineCoder/Weather-App",
-    websiteLink: "https://crumrinecoder.github.io/Weather-App/",
+  //  websiteLink: "https://crumrinecoder.github.io/Weather-App/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
     video: weatherVideo,
