@@ -15,7 +15,7 @@ interface ProjectBoxProps {
     caseStudyLink?: string | undefined;
     freeCodeCampLink?: string | undefined;
     video: string;
-    class: string;
+    classToAdd: string;
   };
   selectedProject: boolean;
   onclick: any;
@@ -32,8 +32,8 @@ class ProjectBox extends Component<ProjectBoxProps> {
   render() {
     const { selectedProject, noProjectSelected, project } = this.props;
     const classPill = selectedProject
-      ? project.class + "Pill"
-      : project.class + "Pill hiddenLink";
+      ? project.classToAdd + "Pill"
+      : project.classToAdd + "Pill hiddenLink";
 
     return (
       <>

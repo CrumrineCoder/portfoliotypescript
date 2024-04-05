@@ -55,7 +55,7 @@ const projectData = [
     websiteLink: "https://confectionswithcharacter.com/",
     //   caseStudyLink: "https://nicolascrumrine.com/#/posts/-Lntx2aWkC23w704-4z-",
     video: bardicVideo,
-    class: "Bard",
+    classToAdd: "Bard",
   },
   {
     logo: raptureLogo,
@@ -70,7 +70,7 @@ const projectData = [
     websiteLink: "https://rapture-fashion.firebaseapp.com/#/",
     //   caseStudyLink: "https://nicolascrumrine.com/#/posts/-LecEwsYvjJNcwIJJjao",
     video: raptureVideo,
-    class: "Rapture",
+    classToAdd: "Rapture",
   },
   {
     logo: votingLogo,
@@ -89,7 +89,7 @@ const projectData = [
     // prevWebsiteLink: "https://joinordie.glitch.me/",
     //  caseStudyLink: "https://nicolascrumrine.com/#/posts/-L_33SYjMlSMzQigh4QA",
     video: pollingVideo,
-    class: "Poll",
+    classToAdd: "Poll",
   },
   {
     logo: cookiesLogo,
@@ -104,7 +104,7 @@ const projectData = [
     codeLink: "https://github.com/CrumrineCoder/PennyJaneReact",
     websiteLink: "http://pennyjanescookies.com/",
     video: cookiesVideo,
-    class: "Penny",
+    classToAdd: "Penny",
   },
   {
     logo: npcLogo,
@@ -120,7 +120,7 @@ const projectData = [
     codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
     websiteLink: "https://npclookup.glitch.me/",
     video: npcVideo,
-    class: "NPC",
+    classToAdd: "NPC",
   },
   {
     logo: twitchViewrLogo,
@@ -138,7 +138,7 @@ const projectData = [
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
     video: twitchVideo,
-    class: "Twitch",
+    classToAdd: "Twitch",
   },
   {
     logo: tmbgLogo,
@@ -154,7 +154,7 @@ const projectData = [
     codeLink: "https://github.com/CrumrineCoder/TheyMightBeGiantsv3",
     websiteLink: "https://tmbg.herokuapp.com/",
     video: tmbgVideo,
-    class: "TMBG",
+    classToAdd: "TMBG",
   },
   {
     logo: connectFourLogo,
@@ -172,7 +172,7 @@ const projectData = [
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game",
     video: connectFourVideo,
-    class: "C4",
+    classToAdd: "C4",
   },
   {
     logo: weatherLogo,
@@ -189,7 +189,7 @@ const projectData = [
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
     video: weatherVideo,
-    class: "Weather",
+    classToAdd: "Weather",
   },
   {
     logo: quotesLogo,
@@ -207,7 +207,7 @@ const projectData = [
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-random-quote-machine",
     video: quotesVideo,
-    class: "Quote",
+    classToAdd: "Quote",
   },
   {
     logo: wikipediaLogo,
@@ -225,7 +225,7 @@ const projectData = [
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer",
     video: wikipediaVideo,
-    class: "Wiki",
+    classToAdd: "Wiki",
   },
   {
     logo: calculatorLogo,
@@ -242,7 +242,7 @@ const projectData = [
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-javascript-calculator",
     video: calculatorVideo,
-    class: "Calc",
+    classToAdd: "Calc",
   },
   {
     logo: pomodoroLogo,
@@ -260,36 +260,31 @@ const projectData = [
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock",
     video: pomodoroVideo,
-    class: "Clock",
+    classToAdd: "Clock",
   },
 ];
 
 let recommendations = [
   {
     name: "Robert Tolmach",
-    text:
-      "<p>Nic has been fantastic to work with while interning with our nonprofit, https://ChangingThePresent.org. I am glad to recommend him.</p><p>His knowledge, analytical skills, ability to teach himself new skills, creativity, work ethic, and productivity are all impressive. He is also enthusiastic, eager to learn, and likable. Everyone here—management, staff, and other interns—loved working with him.</p>",
+    text: "<p>Nic has been fantastic to work with while interning with our nonprofit, https://ChangingThePresent.org. I am glad to recommend him.</p><p>His knowledge, analytical skills, ability to teach himself new skills, creativity, work ethic, and productivity are all impressive. He is also enthusiastic, eager to learn, and likable. Everyone here—management, staff, and other interns—loved working with him.</p>",
     role: "Co-Founder",
     company: "Changing The Present",
     image: robertPFP,
   },
   {
     name: "Sean D. Mack",
-    text:
-      "<p>Nicolas was an amazing addition to the intern program here at xOps.</p> <p>Nic developed front end interface based on mock-ups provided for our open source monitoring tools. He met with our worldwide team for daily standups and biweekly sprints to continue designing mockups after he finished building from the ones provided.</p> <p> During our chats, he was always thoughtful of the business, user, and the development team’s pain points, but was never paralyzed in his decision making. He has an eye for UI design along with an inclination to research and understand the user. He is able to discover pain points and begin developing solutions for them, and is always more than happy to communicate when he needs help. </p> <p> Nic is a talented designer and front-end programmer and I am happy to recommend him for any position he might apply. </p>",
+    text: "<p>Nicolas was an amazing addition to the intern program here at xOps.</p> <p>Nic developed front end interface based on mock-ups provided for our open source monitoring tools. He met with our worldwide team for daily standups and biweekly sprints to continue designing mockups after he finished building from the ones provided.</p> <p> During our chats, he was always thoughtful of the business, user, and the development team’s pain points, but was never paralyzed in his decision making. He has an eye for UI design along with an inclination to research and understand the user. He is able to discover pain points and begin developing solutions for them, and is always more than happy to communicate when he needs help. </p> <p> Nic is a talented designer and front-end programmer and I am happy to recommend him for any position he might apply. </p>",
     role: "CEO/CTO and Principal Consultant",
     company: "xOps",
-    image: seanPFP
+    image: seanPFP,
   },
 ];
 
 function App() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
-  useEffect(() => {
-    console.log(selectedProject);
-    console.log(projectData[selectedProject]?.class);
-  }, [selectedProject]);
+  useEffect(() => {}, [selectedProject]);
 
   return (
     <div className="App">
@@ -332,7 +327,7 @@ function App() {
             image={recommendation.image}
             selectedProject={selectedProject}
             noProjectSelected={selectedProject === null}
-            colour={projectData[selectedProject].class}
+            colour={projectData[selectedProject]?.classToAdd}
           />
         ))}
       </div>

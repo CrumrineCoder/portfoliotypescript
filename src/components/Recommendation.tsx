@@ -20,7 +20,6 @@ const Recommendation: React.FC<RecommendationProps> = ({
     noProjectSelected,
     colour
 }) => {
-  console.log("Colour:", colour);
 
   return (
     <div

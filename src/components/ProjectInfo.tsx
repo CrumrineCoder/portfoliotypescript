@@ -17,7 +17,7 @@ interface ProjectInfoProps {
     caseStudyLink?: string | undefined;
     freeCodeCampLink?: string | undefined;
     video: string;
-    class: string;
+    classToAdd: string;
   }[];
 }
 
@@ -35,7 +35,7 @@ class ProjectInfo extends Component<ProjectInfoProps> {
         className={
             noProjectSelected || !projectData[selectedProject]
                 ? "landingTitleBody"
-                : projectData[selectedProject].class +
+                : projectData[selectedProject].classToAdd +
                     "DarkOpacity landingTitleBody coloredTitleBody"
         }
     >

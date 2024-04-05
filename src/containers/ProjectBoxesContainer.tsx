@@ -20,7 +20,7 @@ interface ProjectBoxesContainerProps {
     caseStudyLink?: string| undefined;
     freeCodeCampLink?: string | undefined;
     video: string;
-    class: string;
+    classToAdd: string;
   }[];
   noProjectSelected: boolean;
 }
@@ -34,7 +34,7 @@ const ProjectBoxesContainer: React.FC<ProjectBoxesContainerProps> = ({
     return (
         <div className={
           !noProjectSelected
-              ?projectData[selectedProject].class +
+              ?projectData[selectedProject].classToAdd +
               "Bar landingBoxesContainer customScrollBar"
               : "landingBoxesContainer customScrollBar defaultBar"
       }>
