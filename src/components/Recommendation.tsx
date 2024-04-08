@@ -12,14 +12,14 @@ interface RecommendationProps {
 }
 
 const Recommendation: React.FC<RecommendationProps> = ({
-    text,
-    image,
-    name,
-    role,
-    company,
-    noProjectSelected,
-    colour
-}) => {
+  text,
+  image,
+  name,
+  role,
+  company,
+  noProjectSelected,
+  colour
+}: RecommendationProps) => {
 
   return (
     <div
