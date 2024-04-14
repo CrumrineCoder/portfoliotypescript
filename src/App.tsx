@@ -180,12 +180,13 @@ const projectData = [
     picture: " Images/weatherApp.png ",
     projectName: "Weather",
     shortDesc: "This is a web app that shows the weather based on location.",
-    backend: "JavaScript, jQuery, OpenStreetMap API, Forecast.io API,",
-    frontend: "HTML5, CSS3, Responsive, Angular, Sass",
+    backend: "TypeScript, OpenMeteo API",
+    frontend: "HTML5, CSS3, Responsive, Sass",
     productPaper:
-      "I taught myself multiple APIs, Angular, Sass and Mobile-first design with this project.",
+      "I originally taught myself multiple APIs, Angular, Sass and Mobile-first design with this project. This was redone with TypeScript.",
     codeLink: "https://github.com/CrumrineCoder/Weather-App",
   //  websiteLink: "https://crumrinecoder.github.io/Weather-App/",
+    websiteLink: "https://crumrinecoder.github.io/Weather-app-typescript/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/show-the-local-weather",
     video: weatherVideo,
