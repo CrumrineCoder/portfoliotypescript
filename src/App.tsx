@@ -222,7 +222,7 @@ const projectData = [
     productPaper:
       "Recently redone with React Hooks. Also taught myself about using APIs with React and more about state management with this project.",
     codeLink: "https://github.com/CrumrineCoder/wikipediaviewerreact",
-    websiteLink: "http://dark-yarn.surge.sh/",
+    websiteLink: "https://crumrinecoder.github.io/wikipediaviewerreact/",
     freeCodeCampLink:
       "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer",
     video: wikipediaVideo,
