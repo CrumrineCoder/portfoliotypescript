@@ -183,8 +183,8 @@ const projectData = [
     backend: "TypeScript, OpenMeteo API",
     frontend: "HTML5, CSS3, Responsive, Sass",
     productPaper:
-      "I originally taught myself multiple APIs, Angular, Sass and Mobile-first design with this project. This was redone with TypeScript.",
-    codeLink: "https://github.com/CrumrineCoder/Weather-App",
+      "I originally taught myself multiple APIs, Angular, Sass and Mobile-first design with this project. This was redone with TypeScript, and with new APIs since Dark Sky and Google Location became paid/deprecated.",
+    codeLink: "https://github.com/CrumrineCoder/Weather-app-typescript",
   //  websiteLink: "https://crumrinecoder.github.io/Weather-App/",
     websiteLink: "https://crumrinecoder.github.io/Weather-app-typescript/",
     freeCodeCampLink:
