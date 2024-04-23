@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfoliotypescript/static/css/main.93ee8fdc.css",
-    "main.js": "/portfoliotypescript/static/js/main.97a59388.js",
+    "main.js": "/portfoliotypescript/static/js/main.6cf8468f.js",
     "static/js/453.36a664c7.chunk.js": "/portfoliotypescript/static/js/453.36a664c7.chunk.js",
     "static/media/TMBG.mp4": "/portfoliotypescript/static/media/TMBG.f8a6adf242a7f9bd28d0.mp4",
     "static/media/NPC.mp4": "/portfoliotypescript/static/media/NPC.926048a4a05b9574b1d9.mp4",
@@ -16,6 +16,7 @@
     "static/media/Quote.mp4": "/portfoliotypescript/static/media/Quote.e40ba9112ebf19bd69f5.mp4",
     "static/media/Pomodoro.mp4": "/portfoliotypescript/static/media/Pomodoro.dc11cb977b3cf41d6a07.mp4",
     "static/media/Twitch.mp4": "/portfoliotypescript/static/media/Twitch.f9e0323466800e1ab277.mp4",
+    "static/media/Calc.mp4": "/portfoliotypescript/static/media/Calc.a3dabd75cb077c317d9a.mp4",
     "static/media/Weather.mp4": "/portfoliotypescript/static/media/Weather.b6557f8db250cd517475.mp4",
     "static/media/Sean.jpg": "/portfoliotypescript/static/media/Sean.23eb4a89e5ab9a497b14.jpg",
     "static/media/Robert.jpg": "/portfoliotypescript/static/media/Robert.620ffe504bebf07f47ff.jpg",
@@ -25,11 +26,11 @@
     "static/media/linkedin.svg": "/portfoliotypescript/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
     "static/media/email.svg": "/portfoliotypescript/static/media/email.6ac62bfa03e2a985535678e82ffed575.svg",
     "main.93ee8fdc.css.map": "/portfoliotypescript/static/css/main.93ee8fdc.css.map",
-    "main.97a59388.js.map": "/portfoliotypescript/static/js/main.97a59388.js.map",
+    "main.6cf8468f.js.map": "/portfoliotypescript/static/js/main.6cf8468f.js.map",
     "453.36a664c7.chunk.js.map": "/portfoliotypescript/static/js/453.36a664c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93ee8fdc.css",
-    "static/js/main.97a59388.js"
+    "static/js/main.6cf8468f.js"
   ]
 }
